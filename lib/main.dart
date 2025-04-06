@@ -711,7 +711,7 @@ class _BudgetCalculatorState extends State<BudgetCalculator> {
     Color color,
   ) {
     final percentage = total > 0 ? (spent / total).clamp(0.0, 1.0) : 0.0;
-    final formatter = NumberFormat.currency(symbol: '\$');
+    final formatter = NumberFormat.currency(symbol: '₹');
 
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
